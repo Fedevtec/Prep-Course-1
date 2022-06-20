@@ -156,7 +156,6 @@ function numeroRandom() {
   //Pista: investigá qué hace el método Math.random()
   return Math.random();
 }
-
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
