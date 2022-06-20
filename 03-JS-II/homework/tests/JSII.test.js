@@ -40,7 +40,7 @@ describe('mayoriaDeEdad(edad)', function() {
   });
 });
 
-describe('conection(status)', function() {
+ describe('conection(status)', function() {
   it('should return the conection state of user', function() {
     expect(conection(1)).toBe('Online');
     expect(conection(2)).toBe('Away');

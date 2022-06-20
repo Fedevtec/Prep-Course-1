@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { prototype } = require("markdown-it/lib/token")
+
 function crearUsuario() {
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
   // Debe aceptar un objeto "opciones" con las propiedades "usuario", "nombre", "email" y "password"
@@ -8,13 +10,36 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
+
+  function usuario (opciones) {
+    this.usuario = opciones.usuario
+    this.nommbre = opciones.nombre
+    this.email   = opciones.email
+    this.password = opciones.password
+  }
+    usuario.prototype.saludar = function () {
+      return 'Hola, mi nombre es' + this.nombre
+    }
+
 }
 
 function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
-}
+  function agregarMetodo (saludar) {
+    metodo.prototype.saludar = function () {
+      return 'hello world '
+    }
+  
+  }
+
+    }
+  
+    
+     
+     
+
 
 function agregarStringInvertida() {
   // Agrega un método al prototype de String que devuelva la misma cadena de caracteres, pero invertida.

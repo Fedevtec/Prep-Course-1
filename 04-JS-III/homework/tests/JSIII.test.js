@@ -22,14 +22,14 @@ const {
   continueStatement
 } = require('../homework');
 
-describe('devolverPrimerElemento(arr)', function() {
+xdescribe('devolverPrimerElemento(arr)', function() {
   it('should return the first item in the array', function() {
     expect(devolverPrimerElemento([10, 10, 16, 12])).toBe(10);
     expect(devolverPrimerElemento([97, 100, 80, 55, 72, 94])).toBe(97);
   });
 });
 
-describe('devolverUltimoElemento(arr)', function() {
+xdescribe('devolverUltimoElemento(arr)', function() {
   it('should return the last item in the array', function() {
     expect(devolverUltimoElemento([10, 10, 16, 12])).toBe(12);
     expect(devolverUltimoElemento([97, 100, 80, 55, 72, 94])).toBe(94);
@@ -37,7 +37,7 @@ describe('devolverUltimoElemento(arr)', function() {
   });
 });
 
-describe('obtenerLargoDelArray(arr)', function() {
+xdescribe('obtenerLargoDelArray(arr)', function() {
   it('should return the length of the array', function() {
     expect(obtenerLargoDelArray([10, 10, 16, 12])).toBe(4);
     expect(obtenerLargoDelArray([97, 100, 80, 55, 72, 94])).toBe(6);
@@ -188,4 +188,4 @@ describe('continueStatement(numero)', function() {
     expect(continueStatement(50)).toEqual([52, 54, 56, 58, 60, 62, 64, 66, 68]);
     expect(continueStatement(-4)).toEqual([-2, 0, 2, 4, 6, 8, 10, 12, 14]);
   });
-});
+}); 

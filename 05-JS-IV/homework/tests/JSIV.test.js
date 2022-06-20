@@ -107,7 +107,7 @@ describe('tieneEmail(user)', function() {
   });
 });
 
-describe('tienePropiedad(object, property)', function() {
+xdescribe('tienePropiedad(object, property)', function() {
   it('should return true if the object has the property that is passed in', function() {
     const obj = {
       x: true,
@@ -144,7 +144,7 @@ describe('actualizarPassword(user, password)', function() {
   });
 });
 
-describe('agregarAmigo(user, newFriend)', function() {
+xdescribe('agregarAmigo(user, newFriend)', function() {
   it('should add a new friend to the end of the amigos array property', function() {
     const user = {
       amigos: ['Ben', 'Austen', 'Ryan', 'Mike', 'Young'],
@@ -154,7 +154,7 @@ describe('agregarAmigo(user, newFriend)', function() {
   });
 });
 
-describe('pasarUsuarioAPremium(users)', function() {
+ xdescribe('pasarUsuarioAPremium(users)', function() {
   it('should return the users array with each user\'s esPremium property set to true', function() {
     const users = [
       { esPremium: false },
@@ -174,7 +174,7 @@ describe('pasarUsuarioAPremium(users)', function() {
   });
 });
 
-describe('sumarLikesDeUsuario(user)', function() {
+xdescribe('sumarLikesDeUsuario(user)', function() {
   it('should return the sum of likes for all user posts', function() {
     const user = {
       usernombre: 'Jhon Doe',
@@ -211,7 +211,7 @@ describe('sumarLikesDeUsuario(user)', function() {
   });
 });
 
-describe('agregarMetodoCalculoDescuento(storeItem)', function() {
+xdescribe('agregarMetodoCalculoDescuento(storeItem)', function() {
   const storeItem = {
     precio: 80,
     porcentajeDeDescuento: 0.1,
